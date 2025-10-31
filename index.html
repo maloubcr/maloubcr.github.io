@@ -1,11 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio de Malou</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Malou Beucher</title>
+  <meta name="description" content="Portfolio de Malou — projets web, design et e-commerce." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bienvenue sur mon portfolio ✨</h1>
-  <p>Je suis Malou, étudiante en web et multimédia.</p>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Malou<span class="dot">.</span></a>
+
+      <!-- Navigation responsive : checkbox hack -->
+      <input id="nav-toggle" type="checkbox" class="nav-toggle" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger"></span>
+      </label>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="cta" href="#contact">Me contacter</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Bonjour — je suis <strong>Malou</strong>,</h1>
+          <p class="lead">Étudiante en Web & Multimédia. Je crée des expériences digitales élégantes, des sites e-commerce orientés conversion et des visuels soignés.</p>
+          <p class="hero-actions">
+            <a class="btn" href="#projects">Voir mes projets</a>
+            <a class="btn ghost" href="#contact">Télécharger CV</a>
+          </p>
+          <ul class="meta">
+            <li><strong>Spécialités :</strong> E-commerce • Marketing digital • UX/UI</li>
+            <li><strong>Disponibilité :</strong> Stage / Freelance</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <!-- sample image area -->
+          <div class="frame">
+            <img src="https://picsum.photos/520/380?grayscale&blur=1" alt="Aperçu projet" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container about">
+      <div class="about-inner">
+        <div class="about-text">
+          <h2>À propos</h2>
+          <p>Je suis passionnée par la création digitale — du prototype au site en production. J’aime travailler sur des projets où le design sert l’objectif commercial : augmentation des conversions, amélioration de l’expérience utilisateur et image de marque forte.</p>
+          <p>Je maîtrise HTML/CSS, un peu de JavaScript, les principes SEO et la création de contenu pour réseaux sociaux et boutiques en ligne.</p>
+          <p><strong>Tu veux voir des exemples concrets ?</strong> J’ai rassemblé mes meilleurs projets plus bas.</p>
+        </div>
+
+        <aside class="about-stats" aria-label="Statistiques">
+          <div class="stat">
+            <span class="num">12+</span>
+            <span class="label">Projets livrés</span>
+          </div>
+          <div class="stat">
+            <span class="num">3</span>
+            <span class="label">Spécialisations</span>
+          </div>
+          <div class="stat">
+            <span class="num">1</span>
+            <span class="label">Boutique en préparation</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container projects">
+      <h2>Projets récents</h2>
+      <p class="section-lead">Un petit aperçu de travaux récents — responsive, pensés pour l'utilisateur et le SEO.</p>
+
+      <div class="grid">
+        <!-- Project card -->
+        <article class="card">
+          <figure class="card-figure">
+            <img src="https://picsum.photos/600/420?random=1" alt="Projet 1" />
+          </figure>
+          <div class="card-body">
+            <h3>Site e-commerce — Cactus Shop</h3>
+            <p>Refonte complète du catalogue produit, optimisation mobile et process checkout simplifié. +18% taux de conversion.</p>
+            <p class="tags"><span>e-commerce</span><span>UX</span></p>
+            <p class="card-cta"><a href="#" class="btn small">Voir le projet</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure class="card-figure">
+            <img src="https://picsum.photos/600/420?random=2" alt="Projet 2" />
+          </figure>
+          <div class="card-body">
+            <h3>Landing marketing — Atelier</h3>
+            <p>Landing optimisée pour acquisition, A/B testing et intégration email automation.</p>
+            <p class="tags"><span>marketing</span><span>SEO</span></p>
+            <p class="card-cta"><a href="#" class="btn small">Voir le projet</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure class="card-figure">
+            <img src="https://picsum.photos/600/420?random=3" alt="Projet 3" />
+          </figure>
+          <div class="card-body">
+            <h3>Identité visuelle — Comète</h3>
+            <p>Création d’identité, guidelines et templates réseaux sociaux pour lancement de marque.</p>
+            <p class="tags"><span>branding</span><span>design</span></p>
+            <p class="card-cta"><a href="#" class="btn small">Voir le projet</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container skills">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>HTML & CSS</h4>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>UX / UI</h4>
+          <div class="bar"><span style="width:78%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>SEO & Content</h4>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Marketing digital</h4>
+          <div class="bar"><span style="width:72%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container contact">
+      <h2>Contact</h2>
+      <div class="contact-inner">
+        <form class="contact-form" action="mailto:tonemail@example.com" method="post" enctype="text/plain">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Envoyer</button>
+            <button type="reset" class="btn ghost">Effacer</button>
+          </div>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Let's talk</h3>
+          <p>Pour un stage, collaboration ou simple question — écris-moi !</p>
+          <ul>
+            <li><strong>Email :</strong> <a href="mailto:tonemail@example.com">tonemail@example.com</a></li>
+            <li><strong>Localisation :</strong> France</li>
+            <li><strong>LinkedIn :</strong> <a href="#">/in/malou</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Malou Beucher — Portfolio</p>
+      <nav class="socials" aria-label="Liens sociaux">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // small script: current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
