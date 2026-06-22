@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateo Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Mateo Clicker</h1>
+
+    <div id="affichage">0</div>
+
+    <!-- Mateo et la couronne dans le même conteneur -->
+    <div id="container-photo">
+        <div id="crown">👑</div>
+        <img id="click" src="mateo.png" alt="Clique ici !">
+    </div>
+
+    <!-- Boutique à droite -->
+    <div class="shop-buttons">
+        <button id="upgrade1">Multiplicateur x2 (25)</button>
+        <button id="upgrade2">Multiplicateur x3 (150)</button>
+        <button id="upgrade3">ULTRA x10 (500)</button>
+        <button id="upgrade4">⚡ Auto-Clicker (800)</button>
+    </div>
+
+    <!-- Barre de progression en bas -->
+    <div class="progress-container">
+        <p id="progress-text">Aide Mateo à devenir drôle...</p>
+        <div class="progress-bar-bg">
+            <div id="progress-fill"></div>
+        </div>
+    </div>
+
+    <!-- Écran de victoire -->
+    <div id="victory-screen">
+        <div id="victory-content">
+            <h2 id="victory-title">🎉 FÉLICITATIONS ! 🎉</h2>
+            <p id="victory-subtitle">Mateo est OFFICIELLEMENT drôle !</p>
+            <p id="victory-score"></p>
+            <p id="victory-msg">Grâce à toi, le monde est un endroit meilleur.<br>Enfin... un tout petit peu.</p>
+            <button id="victory-restart">🔄 Rejouer</button>
+        </div>
+        <canvas id="confetti-canvas"></canvas>
+    </div>
+
+    <!-- Auto clicker -->
+
+</body>
+</html>
